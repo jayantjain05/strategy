@@ -1,0 +1,53 @@
+📊 EMI-Level Data Analysis & Underwriting Recommendations
+Welcome to the EMI-Level Data Analysis project! This repository showcases a comprehensive data-driven approach to analyzing EMI repayment behavior for an international lender and provides actionable insights to improve underwriting practices based on bureau and banking variables.
+
+🚀 Project Objective
+Analyze EMI-level loan data to:
+
+Identify key patterns and drivers of default.
+Evaluate the impact of credit bureau and banking variables.
+Recommend improvements for underwriting strategies to reduce credit risk and optimize loan approval processes.
+🗂️ Dataset
+The dataset includes:
+
+Loan details: principal amount, tenure, interest rates, disbursal & repayment dates.
+Borrower credit behavior: CIBIL scores, inquiries, utilization metrics.
+Repayment history: EMI due dates, payment delays, default flags.
+Geographical information: borrower region.
+Note: Data anonymized for demonstration purposes.
+
+⚙️ Tools & Technologies
+Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+SQL (for exploratory data analysis - optional)
+Excel (for quick descriptive stats - optional)
+Jupyter Notebook (for interactive analysis & visualization)
+🔍 Key Analyses Performed
+Data Preprocessing
+
+Date conversion, handling missing values, feature engineering (days_delayed, emi_amount, default_flag).
+Exploratory Data Analysis (EDA)
+
+Default rates by region.
+Distribution of CIBIL scores and utilization ratios.
+EMI payment delay patterns.
+Feature Correlation Analysis
+
+Identified key drivers of default: principal_outstanding_amt, ABB_90d, Utilization.
+Predictive Modeling
+
+Logistic Regression (baseline model).
+Random Forest Classifier (improved recall and accuracy).
+Addressed class imbalance using stratified sampling and evaluation metrics (Precision, Recall, F1-Score).
+📈 Results & Insights
+Default Rate: 13.78% overall; regionally varies.
+Top Risk Indicators:
+Principal Outstanding Amount
+ABB_90d (Average Balance Behavior over 90 days)
+Credit Utilization
+Model Accuracy:
+Logistic Regression: 85% accuracy, poor recall.
+Random Forest: 87% accuracy, 38% recall for default class.
+Recommendations:
+Focus underwriting on high-utilization borrowers.
+Implement early intervention strategies for borrowers delaying EMIs by more than 20 days.
+Enhance regional risk models.
